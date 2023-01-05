@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Move</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/dashboard/">
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="assets/dist/css/dashboard.css" rel="stylesheet">
+
+    <!-- font awesome -->
+    <link href="assets/dist/css/fontawesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header class="navbar navbar-dark sticky-top  flex-md-nowrap p-0 shadow">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#">Motiv.</a>
+  <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <input class="form-control form-control-dark w-100 rounded-0 border-0" type="text" placeholder="Search" aria-label="Search">
+  
+                  
+  
+  
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <img class="img-xs rounded-circle image" id="avatar" src="assets/images/avatar.png" alt="">
+    </div>
+  </div>
+</header>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block  sidebar collapse">
+      <div class="position-sticky pt-3">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">
+              <span data-feather="home" class="align-text-bottom"></span>
+              Dashboard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file" class="align-text-bottom"></span>
+              Assets
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Booking/index.html">
+              <span data-feather="shopping-cart" class="align-text-bottom"></span>
+              Booking
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users" class="align-text-bottom"></span>
+              Customers
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+              Sell Cars
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers" class="align-text-bottom"></span>
+              Buy Cars
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers" class="align-text-bottom"></span>
+              Services 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers" class="align-text-bottom"></span>
+              Calender 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers" class="align-text-bottom"></span>
+              Messages 
+            </a>
+          </li>
+        </ul>
+        <ul class="nav flex-column end">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers" class="align-text-bottom"></span>
+              Setting
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers" class="align-text-bottom"></span>
+              Log out
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        
+      <!-- Start Charts-->
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12 border-right-blue-grey border-right-lighten-5">
+            <div class="card-body text-center firstcard">
+              <div class="card-header mb-2">
+                <h5 class="">Energy</h5>
+              </div>
+              <div class="card-content">
+                <div style="display:inline;width:150px;height:150px;">
+                   <!-- <canvas width="150" height="150"></canvas> -->
+                   <input type="text" value="45" class="knob hide-value responsive angle-offset" data-angleoffset="0" data-thickness=".15" data-linecap="round" data-width="150" data-height="150" data-inputcolor="#e1e1e1" data-readonly="true" data-fgcolor="#FF9149" data-knob-icon="icon-user" readonly="readonly" style="width: 79px; height: 50px; position: absolute; vertical-align: middle; margin-top: 50px; border: 0px; background: none; font: bold 30px Arial; text-align: center; color: rgb(225, 225, 225); padding: 0px; appearance: none; margin-left: -114px; display: none;">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        <div class="col-lg-3 col-md-12 col-sm-12 border-right-blue-grey border-right-lighten-5">
+          <div class="card-body text-center secondcard">
+            <div class="card-header mb-2">
+              <h5 class="">Range</h5>
+            </div>
+            <div class="card-content">
+              <div style="display:inline;width:150px;height:150px;">
+                 <!-- <canvas width="150" height="150"></canvas> -->
+                 <input type="text" value="60" class="knob hide-value responsive angle-offset" data-angleoffset="0" data-thickness=".15" data-linecap="round" data-width="150" data-height="150" data-inputcolor="#e1e1e1" data-readonly="true" data-fgcolor="#FF9149" data-knob-icon="icon-user" readonly="readonly" style="width: 79px; height: 50px; position: absolute; vertical-align: middle; margin-top: 50px; border: 0px; background: none; font: bold 30px Arial; text-align: center; color: rgb(225, 225, 225); padding: 0px; appearance: none; margin-left: -114px; display: none;">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+      <div class="col-lg-3 col-md-12 col-sm-12 border-right-blue-grey border-right-lighten-5">
+        <div class="card-body text-center thirdcard">
+          <div class="card-header mb-2">
+            <h5 class="">Break Fluid</h5>
+          </div>
+          <div class="card-content">
+            <div style="display:inline;width:150px;height:150px;">
+               <!-- <canvas width="150" height="150"></canvas> -->
+               <input type="text" value="15" class="knob hide-value responsive angle-offset" data-angleoffset="0" data-thickness=".15" data-linecap="round" data-width="150" data-height="150" data-inputcolor="#e1e1e1" data-readonly="true" data-fgcolor="#ff9149" data-knob-icon="icon-user" readonly="readonly" style="width: 79px; height: 50px; position: absolute; vertical-align: middle; margin-top: 50px; border: 0px; background: none; font: bold 30px Arial; text-align: center; color: rgb(225, 225, 225); padding: 0px; appearance: none; margin-left: -114px; display: none;">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="col-lg-3 col-md-12 col-sm-12 border-right-blue-grey border-right-lighten-5">
+      <div class="card-body text-center forthcard">
+        <div class="card-header mb-2">
+          <h5 class="">Tire Wear</h5>
+        </div>
+        <div class="card-content">
+          <div style="display:inline;width:150px;height:150px;">
+             <!-- <canvas width="150" height="150"></canvas> -->
+              <input type="text" value="25" class="knob hide-value responsive angle-offset" data-angleoffset="0" data-thickness=".15" data-linecap="round" data-width="150" data-height="150" data-inputcolor="#ff4961" data-readonly="true" data-fgcolor="#ff4961" data-knob-icon="icon-user" readonly="readonly" style="width: 79px; height: 50px; position: absolute; vertical-align: middle; margin-top: 50px; border: 0px; background: none; font: bold 30px Arial; text-align: center; color: rgb(225, 225, 225); padding: 0px; appearance: none; margin-left: -114px; display: none;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        <!-- End Charts -->
+
+        <div class="row">
+
+          
+
+          <div class="col-xl-6 col-lg-6">
+            <div class="card">
+              <div class="card-content bg-success">
+                <div class="card-body sales-growth-chart">
+                  <div id="mobile-sales" class="height-250" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="250" version="1.1" width="280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.734375px; top: -0.765625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.2</desc>
+                    <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs>
+                     
+                      <text x="238.79287239583334" y="195.6076744135156" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#f4f5f9" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-92.0659,194.3281)">
+                        <tspan dy="3.999993139101548" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2 AM</tspan>
+                      </text><text x="205.4406171875" y="195.6076744135156" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#f4f5f9" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-98.6492,175.5856)">
+                        <tspan dy="3.999993139101548" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">3 AM</tspan>
+                      </text>
+                      <text x="138.73610677083332" y="195.6076744135156" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#f4f5f9" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-95.1302,126.4152)"><tspan dy="3.999993139101548" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">4 AM</tspan>
+                      </text>
+                      <text x="105.38385156249998" y="195.6076744135156" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#f4f5f9" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-107.7227,111.8805)">
+                        <tspan dy="3.999993139101548" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">5 AM</tspan>
+                      </text><text x="72.03159635416667" y="195.6076744135156" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#f4f5f9" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(0.8192,-0.5736,0.5736,0.8192,-118.6763,96.1975)">
+                        <tspan dy="3.999993139101548" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">6 AM</tspan>
+                      </text><rect x="67.02875807291667" y="86.3984802305819" width="10.0056765625" height="96.70919418293371" rx="0" ry="0" fill="#f4f5f9" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="100.38101328125" y="58.940447440768025" width="10.0056765625" height="124.16722697274759" rx="0" ry="0" fill="#f4f5f9" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect>
+                      <rect x="133.73326848958334" y="106.21464209040919" width="10.0056765625" height="76.89303232310642" rx="0" ry="0" fill="#f4f5f9" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="167.08552369791667" y="115.17407697384174" width="10.0056765625" height="67.93359743967387" rx="0" ry="0" fill="#f4f5f9" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="200.43777890625" y="96.30656116049555" width="10.0056765625" height="86.80111325302006" rx="0" ry="0" fill="#ffffff" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="233.79003411458334" y="69.48095906833572" width="10.0056765625" height="113.62671534517989" rx="0" ry="0" fill="#ffffff" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg>
+                      <div class="morris-hover morris-default-style" style="left: 25.6722px; top: 93px; display: none;">
+                        <div class="morris-hover-row-label"></div>
+                        <div class="morris-hover-point" style="color: #FFF">
+                      </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card border-0">
+              <div class="card-content">
+                <div class="card-body">
+                  <div class="media d-flex">
+                    <div class="media-body">
+                      <h4 class="">Car Statistics</h4>
+                      <span class="text-muted">20 Feberuary 2022</span>
+                    </div>
+                    <div class="align-self-center">
+                      <i class="icon-graph font-large-2 blue-grey lighten-3"></i>
+                    </div>
+                  </div>
+                </div>
+                <div id="sp-line-total-sales"><canvas width="322" height="100" style="display: inline-block; width: 322.469px; height: 100px; vertical-align: top;"></canvas></div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="row">
+
+
+          <div class="col-md-4">
+            <div class="card first">
+              <div class="card-content">
+                <div class="card-body">
+                  <h5 class="card-title">64% Recomended</h5>
+                  <img class="img-fluid my-1" src="assets/images/car1.PNG" alt="Card image cap">
+                  <h4 class="card-subtitle text-muted">Mini Cooper</h4>
+                  <a href="#" class="card-link blue darken-2">110k</a>
+                  <a href="#" class="card-link blue darken-2">Manual</a>
+                  <p class="blue darken-2">$400/h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="col-md-4">
+            <div class="card second">
+              <div class="card-content">
+                <div class="card-body">
+                  <h5 class="card-title">74% Recomended</h5>
+                  <img class="img-fluid my-1" src="assets/images/car1.PNG" alt="Card image cap">
+                  <h4 class="card-subtitle text-muted">Porsche 911 Carrera</h4>
+                  <a href="#" class="card-link blue darken-2">130k</a>
+                  <a href="#" class="card-link blue darken-2">setting</a>
+                  <p class="blue darken-2">$400/h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card third">
+              <div class="card-content">
+                <div class="card-body">
+                  <h5 class="card-title">64% Recomended</h5>
+                  <img class="img-fluid my-1" src="assets/images/car1.PNG" alt="Card image cap">
+                  <h4 class="card-subtitle text-muted">Mini Cooper</h4>
+                  <a href="#" class="card-link blue darken-2">120k</a>
+                  <a href="#" class="card-link blue darken-2">setting</a>
+                  <p class="blue darken-2">$400/h</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>  
+
+  </div>
+</div>
+
+
+      <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+      
+      <script src="assets/dist/js/dashboard.js" type="javascript"></script>
+      <script src="assets/dist/js/vendors.min.js" type="text/javascript"></script>
+      <script src="assets/dist/js/jquery.knob.min.js" type="text/javascript"></script>
+      <script src="assets/dist/js/card.js" type="text/javascript"></script>
+      <script src="assets/dist/js/card-statistics.js" type="text/javascript"></script>
+  </body>
+</html>
